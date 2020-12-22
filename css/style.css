@@ -8024,7 +8024,7 @@ height: auto;
 }
 
 .main-slider.hp_5 .tp-bgimg.defaultimg:before {
-	background: rgba(0,0,0,0.70);
+	background: rgba(0,0,0,0.05);
 }
 .main-slider.hp_5 .container-fluid {
 	padding: 0;
