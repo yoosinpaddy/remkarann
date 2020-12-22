@@ -57,10 +57,10 @@
 
 
 function initMap() {
-    var latlng = new google.maps.LatLng(-1.2783291,36.8847522);
+    var latlng = new google.maps.LatLng(-1.3131553,36.8691461);
     var latlng2 = new google.maps.LatLng(51.508742,-0.120850);
     var myOptions = {
-        zoom: 12,
+        zoom: 15,
         center: latlng,
         styles: [
     {
@@ -154,34 +154,36 @@ function initMap() {
 
     var map = new google.maps.Map(document.getElementById("map"), myOptions);
     
-    var map2 = new google.maps.Map(document.getElementById("map2"), myOptions);
+    // var map2 = new google.maps.Map(document.getElementById("map2"), myOptions);
 
-    var myMarker = new google.maps.Marker(
+    // var myMarker = new google.maps.Marker(
+    new google.maps.Marker(
     {
         position: latlng,
-        map: map,
-        icon: 'images/marker.png',
-        title:"China"
+        map,
+        /* icon: '../images/marker.png', */
+        title:"Remkar Accomodation"
    });
+   console.log("map");
 
-    var myMarker2 = new google.maps.Marker(
+   /*  var myMarker2 = new google.maps.Marker(
     {
         position: latlng2,
         map: map2,
-        icon: 'images/marker.png',
+        icon: '../images/marker.png',
         title:"Beijing"
-    });
+    }); */
 }
 
 
 
-    
-// $(document).on("ready", function(){
+/*     
+$(document).on("ready", function(){
 
-//     var gap = $(".container").offset().left;
-//     $(".about-conf").css({
-//         "padding-left": gap
-//     });
+    var gap = $(".container").offset().left;
+    $(".about-conf").css({
+        "padding-left": gap
+    });
 
 
-// });
+}); */
